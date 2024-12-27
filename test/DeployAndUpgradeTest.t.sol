@@ -15,7 +15,7 @@ contract DeployAndUpgradeTest is StdCheats, Test {
     UpgradeBox public upgradeBox;
     address public OWNER = makeAddr("owner");
 
-    address public proxy; 
+    address public proxy;
 
     function setUp() public {
         deployBox = new DeployBox();

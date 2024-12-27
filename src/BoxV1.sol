@@ -23,7 +23,7 @@ contract BoxV1 is Initializable, UUPSUpgradeable, OwnableUpgradeable {
     // initialize is essentially the constructor for Proxy contracts.
     function initialize() public initializer {
         __Ownable_init(msg.sender); // Sets the owner to msg.sender
-        __UUPSUpgradeable_init(); 
+        __UUPSUpgradeable_init();
     }
 
     function getNumber() external view returns (uint256) {
